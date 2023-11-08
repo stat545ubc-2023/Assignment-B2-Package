@@ -1,5 +1,5 @@
 test_that("Output matches direct call to dplyr", {
-  small_tbl <- dplyr::tribble(~group, ~var1, ~var2,
+  small_tbl <- tibble::tribble(~group, ~var1, ~var2,
                        "A", 1, NA,
                        "A", 2, "x",
                        "B", NA, "y",
@@ -19,7 +19,7 @@ test_that("Output matches direct call to dplyr", {
 })
 
 test_that("Checking error handling for .groups input", {
-  small_tbl2 <- dplyr::tribble(~group, ~var1, ~var2,
+  small_tbl2 <- tibble::tribble(~group, ~var1, ~var2,
                               "A", 1, "w",
                               "A", 2, "x",
                               "B", 2, "y",
