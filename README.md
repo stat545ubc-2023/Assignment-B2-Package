@@ -14,7 +14,7 @@ missing values for all columns of a data frame by group.
 You can install the development version of B2Prebake like so:
 
 ``` r
-devtools::install_github("stat545ubc-2023/B2package", ref = "0.1.0")
+devtools::install_github("https://github.com/stat545ubc-2023/B2package/tree/main", ref = "0.1.0")
 ```
 
 ## Example
@@ -36,7 +36,7 @@ library(dplyr) #load relevant packages
 the ‘small_tbl’ tibble grouped by the `group` variable.
 
 ``` r
-small_tbl <- tribble(~group,~var1,~var2,"A",1,NA,"A",2,"x","B",NA,"y","C",3,"z")
+small_tbl <- tibble::tribble(~group,~var1,~var2,"A",1,NA,"A",2,"x","B",NA,"y","C",3,"z")
 count_all_missing_by_group(small_tbl, group)
 #> # A tibble: 3 × 3
 #>   group  var1  var2
@@ -51,7 +51,7 @@ grouped by the grouping column. The output tibble below remains grouped,
 in contrast to the output tibble above.
 
 ``` r
-small_tbl <- tribble(~group,~var1,~var2,"A",1,NA,"A",2,"x","B",NA,"y","C",3,"z")
+small_tbl <- tibble::tribble(~group,~var1,~var2,"A",1,NA,"A",2,"x","B",NA,"y","C",3,"z")
 count_all_missing_by_group(small_tbl, group, .groups = "keep")
 #> # A tibble: 3 × 3
 #> # Groups:   group [3]
