@@ -1,0 +1,16 @@
+Package: B2Prebake
+Title: Count missing values for all columns by group
+Version: 0.1.0
+Authors@R: 
+    person("Alex", "Wang", , "abw@student.ubc.ca", role = c("aut", "cre"))
+Description: B2Prebake contains a function to streamline counting missing values 
+  for all columns in a given data frame by group.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    dplyr
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
