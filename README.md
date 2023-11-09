@@ -6,12 +6,15 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of B2Prebake is to provide a function to simplify counting
-missing values for all columns of a data frame by group.
+The goal of B2Prebake is to provide a function
+(‘count_all_missing_by_group’) to simplify counting missing values for
+all columns of a data frame by group.
 
 ## Installation
 
-You can install the development version of B2Prebake like so:
+Ensure devtools is installed. If not installed, run
+install.packages(“devtools”) to install it. You can install the
+development version of B2Prebake like so:
 
 ``` r
 devtools::install_github("https://github.com/stat545ubc-2023/B2Prebake/tree/main", ref = "0.1.0")

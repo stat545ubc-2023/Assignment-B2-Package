@@ -3,7 +3,7 @@ Title: Count missing values for all columns by group
 Version: 0.1.0
 Authors@R: 
     person("Alex", "Wang", , "abw@student.ubc.ca", role = c("aut", "cre"))
-Description: B2Prebake contains a function to streamline counting missing values 
+Description: B2Prebake contains a function ('count_all_missing_by_group') to streamline counting missing values 
   for all columns in a given data frame by group.
 License: MIT + file LICENSE
 Encoding: UTF-8
