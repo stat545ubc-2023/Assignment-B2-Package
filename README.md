@@ -14,10 +14,10 @@ all columns of a data frame by group.
 
 Ensure devtools is installed. If not installed, run
 install.packages(“devtools”) to install it. You can install the
-development version of B2Prebake like so:
+development version of the B2Prebake package like so:
 
 ``` r
-devtools::install_github("https://github.com/stat545ubc-2023/B2Prebake/tree/main", ref = "0.1.0")
+devtools::install_github("stat545ubc-2023/B2Prebake")
 ```
 
 ## Example
