@@ -46,11 +46,11 @@ count_all_missing_by_group <- function(data, group_col, .groups = "drop") {
                         "keep", "rowwise"))) {
       stop(".groups needs to be one of NULL,
          \"drop_last\", \"drop\", \"keep\",
-         and \"rowwise\".")
+         and \"rowwise\".") #if the .groups argument is not an acceptable input, return error with message
     }
   }
 
-  data |> dplyr::group_by({{ group_col }}) |>
+  data |> dplyr::group_by({{ group_col }}) |> #group by group_col argument
     dplyr::summarize(dplyr::across(dplyr::everything(), ~sum(is.na(.x))),
-              .groups = .groups)
+              .groups = .groups) #count number of missing values in all columns and return new summarised data frame
 }
